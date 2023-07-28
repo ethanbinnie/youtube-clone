@@ -6,10 +6,10 @@ import Main from "./components/Main";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <div className="app-content">
-        <Sidebar />
-        <div>
+      <div className="main-container">
+        <Header />
+        <div className="app-content">
+          <Sidebar />
           <Main />
         </div>
       </div>
