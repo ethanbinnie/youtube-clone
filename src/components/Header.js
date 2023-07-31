@@ -1,11 +1,15 @@
 import { Nav, YouTube, Create, Bell } from "../Icons";
 import { MicrophoneIcon } from "@heroicons/react/24/solid";
-export default function Header() {
+
+export default function Header(props) {
+
   return (
-    <div className="header">
       <div className="header-1">
         <div className="headerContent">
-          <Nav /> <YouTube />
+          <div className="burger" onClick={() => props.setIsMinimised(previsMinimised => !previsMinimised)}>
+            <Nav /> 
+          </div>
+          <YouTube />
         </div>
         <div className="headerContent">
           <input
@@ -21,6 +25,5 @@ export default function Header() {
           <img src="profile.jpg" alt="profile" className="profile" />
         </div>
       </div>
-    </div>
   );
 }

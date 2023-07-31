@@ -1,9 +1,9 @@
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 import Gallery from "./Gallery";
 
-export default function Main() {
+export default function Main(props) {
   return (
-    <div className="main">
+    <div className={props.isMinimised === true ? "mainExpanded" : "main"}>
       <div className="header-2">
         <div>
           <p className="headerTopics">All</p>
@@ -42,7 +42,7 @@ export default function Main() {
           <ChevronRightIcon width={24} height={24} />
         </div>
       </div>
-      <div className="gallery">
+      <div className="videos">
         <div className="row-1">
           <div>
             <Gallery

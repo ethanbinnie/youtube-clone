@@ -24,38 +24,41 @@ import {
 } from "../Icons";
 import { Ytpremium, Ytstudio, Ytmusic, Ytkids } from "../Icons";
 
-export default function Sidebar() {
+
+export default function Sidebar(props) {
   return (
-    <div className="sidebar">
+    <div className={props.isMinimised === true ? "sidebarMinimised" : "sidebar"}>
       <div className="sideSection">
         <div className="direction">
-          <Home /> <p>Home</p>
+          <Home />
+          {props.isMinimised === false && <p>Home</p>} 
         </div>
         <div className="direction">
-          <Shorts /> <p>Shorts</p>
+          <Shorts />
+          {props.isMinimised === false && <p>Shorts</p>}
         </div>
         <div className="direction">
-          <Subscriptions /> <p>Subscriptions</p>
+          <Subscriptions /> {props.isMinimised === false && <p>Subscriptions</p>}
         </div>
       </div>
       <div className="sideSection">
         <div className="direction">
-          <Library /> <p>Library</p>
+          <Library /> {props.isMinimised === false && <p>Library</p>}
         </div>
         <div className="direction">
-          <History /> <p>History</p>
+          <History /> {props.isMinimised === false && <p>History</p>}
         </div>
         <div className="direction">
-          <Yourvideos /> <p>History</p>
+          <Yourvideos /> {props.isMinimised === false && <p>History</p>}
         </div>
         <div className="direction">
-          <Yourcourses /> <p>Your Courses</p>
+          <Yourcourses /> {props.isMinimised === false && <p>Your Courses</p>}
         </div>
         <div className="direction">
-          <Watchlater /> <p>Watch Later</p>
+          <Watchlater /> {props.isMinimised === false && <p>Watch Later</p>}
         </div>
         <div className="direction">
-          <Showmore /> <p>Show more</p>
+          <Showmore /> {props.isMinimised === false && <p>Show more</p>}
         </div>
       </div>
       <div className="sideSection">

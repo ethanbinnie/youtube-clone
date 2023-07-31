@@ -24,8 +24,17 @@
   /* border: 1px solid black; */
   width: 240px;
   overflow-y: scroll;
-  height: 100%;
-  padding: 10px;
+  max-height: 90vh;
+  position: fixed;
+  margin-top: 60px;
+}
+
+.sidebarMinimised {
+  width: 70px;
+  overflow-y: scroll;
+  max-height: 90vh;
+  position: fixed;
+  margin-top: 60px;
 }
 
 .direction {
@@ -57,14 +66,16 @@ h4 {
   padding-bottom: 10px;
 }
 
-.header {
-  width: 100%;
-}
-
 .header-1 {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  gap: 235px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  margin-right: 20px;
+  position: fixed;
+  background-color: white;
 }
 .header-2 {
   display: flex;
@@ -74,6 +85,8 @@ h4 {
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 20px;
+  position: fixed;
+  background-color: white;
 }
 
 .headerContent {
@@ -124,12 +137,14 @@ h4 {
   border-radius: 20px;
 }
 
-.gallery {
+.videos {
   display: flex;
   flex-direction: column;
   padding-left: 10px;
-
+  padding-top: 50px;
   height: 100%;
+  width: 100%;
+  overflow: hi
 }
 
 .row-1 {
@@ -213,4 +228,26 @@ h4 {
 .main {
   height: 100%;
   width: 100%;
+  padding-left: 250px;
+  padding-top: 60px;
 }
+
+.mainExpanded {
+  height: 100%;
+  width: 100%;
+  padding-left: 80px;
+  padding-top: 60px;
+
+}
+
+.sidebar-icon {
+  background-color: green;
+  width: "100px";
+  height: "100px";
+}
+
+.burger {
+  cursor: pointer;
+}
+
+
