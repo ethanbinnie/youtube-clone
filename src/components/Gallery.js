@@ -1,6 +1,6 @@
 function Gallery(props) {
   return (
-    <div className="gallery-1">
+    <div className="gallery1">
       <img
         src={props.thumbnail}
         alt="20v1thumbnail"
@@ -8,17 +8,17 @@ function Gallery(props) {
         width={360}
         height={200}
       />
-      <div className="gallery-2">
-        <div className="gallery-img">
-          <img src={props.profile} alt="profile" className="gallery-profiles" />
+      <div className="gallery2">
+        <div className="galleryImg">
+          <img src={props.profile} alt="profile" className="galleryProfiles" />
         </div>
         <div>
-          <h3 className="gallery-title">{props.title}</h3>
-          <div className="gallery-3">
-            <p className="gallery-info">{props.name}</p>
-            <div className="gallery-4">
-              <p className="gallery-info">{props.views}</p>
-              <p className="gallery-info">{props.date}</p>
+          <h3 className="galleryTitle">{props.title}</h3>
+          <div className="gallery3">
+            <p className="galleryInfo">{props.name}</p>
+            <div className="gallery4">
+              <p className="galleryInfo">{props.views}</p>
+              <p className="galleryInfo">{props.date}</p>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import Gallery from "./Gallery";
 
 export default function Main(props) {
   return (
-    <div className={props.isMinimised === true ? "mainExpanded" : "main"}>
+    <div className="main">
       <div className="header-2">
         <div>
           <p className="headerTopics">All</p>
@@ -42,8 +42,7 @@ export default function Main(props) {
           <ChevronRightIcon width={24} height={24} />
         </div>
       </div>
-      <div className="videos">
-        <div className="row-1">
+      <div className={props.isMinimised === false ? "videos" : "videosExpanded"}>
           <div>
             <Gallery
               thumbnail="sidemenkai.jpeg"
@@ -74,8 +73,6 @@ export default function Main(props) {
               date="5 months ago"
             />
           </div>
-        </div>
-        <div className="row-2">
           <div>
             <Gallery
               thumbnail="ryanpenny.jpeg"
@@ -106,8 +103,6 @@ export default function Main(props) {
               date="2 months ago"
             />
           </div>
-        </div>
-        <div className="row-3">
           <div>
             <Gallery
               thumbnail="golfamongus.jpeg"
@@ -138,8 +133,6 @@ export default function Main(props) {
               date="1 year ago"
             />
           </div>
-        </div>
-        <div className="row-4">
           <div>
             <Gallery
               thumbnail="snakesvid.jpeg"
@@ -170,7 +163,6 @@ export default function Main(props) {
               date="1 year ago"
             />
           </div>
-        </div>
       </div>
     </div>
   );
